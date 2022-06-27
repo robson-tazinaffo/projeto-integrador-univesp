@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PI II - Formulário</title>
+  <link rel="shortcut icon" href="assets/img/logo-page.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" media="screen and (max-width: 768px)" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-bottom/">
+
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css" media="print">
+  <script src="assets/js/fontawesome.min.js"></script>
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbar-bottom/">
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+      <div class="logo">
+        <img src="assets/img/logo-dengue-nao.svg" alt="Logo da página com mosquito da dengue" />
+      </div>
+
+      <div class="menu-section">
+        <div class="menu-toggle">
+          <div class="one"></div>
+          <div class="two"></div>
+          <div class="three"></div>
+        </div>
+        <nav>
+          <ul>
+            <li>
+              <a href="index.html">Inicio</a>
+            </li>
+            <li>
+              <a href="estatisticas.html">Estatísticas</a>
+            </li>
+            <li>
+              <a href="contato.html">Contato</a>
+            </li>
+            <li>
+              <a href="#">Denúncia</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div>
+        <h1>
+          Faça aqui sua denuncia !<br>
+          Seus dados estarão protegidos de acordo com as diretrizes da LGPD(Lei geral de proteção de dados), de acordo
+          com a Lei: 000 art. 000
+        </h1>
+        <h2>
+          Preencha o formulario abaixo e dê sua contribuição ao combate do mosquito
+        </h2>
+        <!-- <a href="#" class="button">Mais informações</a> -->
+      </div>
+      <img class="img-denuncia" src="assets/img/ouvidoria.jpeg" alt="" />
+    </div>
+  </section>
+
+  <div id="form">
+
+
+    <form>
+
+      <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome" aria-describedby="nome" placeholder="Digite seu nome">
+      </div>
+
+      <div class="form-group">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" class="form-control" id="sobrenome" aria-describedby="sobrenome"
+          placeholder="Digite seu sobrenome">
+      </div>
+
+
+      <div class="form-group">
+        <label for="email1">Endereço de email</label>
+        <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Seu email">
+        <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email,
+          com
+          ninguém.</small>
+      </div>
+
+      <div class="form-group">
+        <label for="fone">Telefone</label>
+        <input type="tel" class="form-control" id="fone" placeholder="Telefone ou celular">
+      </div>
+
+      <div class="form-group">
+        <label for="nascimento">Nascimento</label>
+        <input type="date" name="birthday" class="form-control" id="nascimento" required />
+      </div>
+
+
+      <div class="form-group">
+        <label for="cidade">Selecione a cidade</label>
+        <select class="form-control" id="cidade">
+          <option>Ituverava</option>
+          <option>Guará</option>
+          <option>São Joaquim da Barra</option>
+          <option>Morro Agudo</option>
+          <option>Franca</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="bairro">Bairro</label>
+        <input type="text" class="form-control" id="bairro" aria-describedby="bairro" placeholder="Digite seu bairro">
+      </div>
+
+      <div class="form-group">
+        <label for="datetime-local">Data e horário</label>
+        <input type="datetime-local" class="form-control" name="datetime-local" id="datetime-local" required />
+      </div>
+
+      <div class="form-group">
+        <label for="controlFile">Foto do local</label>
+        <input type="file" class="form-control-file" id="controlFile">
+      </div>
+
+      <div class="form-check">
+        <label>Selecione pelo menos um motivo</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="check1">
+        <label class="form-check-label" for="check1">Criadouros</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="check2">
+        <label class="form-check-label" for="check2">Residência abandonada</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="check3">
+        <label class="form-check-label" for="check3">Terreno abandonado</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="check4">
+        <label class="form-check-label" for="check4">Construção abandonada</label>
+        <br>
+        <input type="checkbox" class="form-check-input" id="check5">
+        <label class="form-check-label" for="check5">Outro motivo</label>
+
+      </div>
+
+      <div class="form-group">
+        <label for="textarea">Outro motivo ou comentário.</label>
+        <textarea class="form-control" id="textarea" rows="6"></textarea>
+      </div>
+
+      <button type="submit" class="button-form">Enviar</button>
+    </form>
+
+
+
+
+    <!-- <section class="cards">
+
+      <div class="card">
+        <div class="content">
+        </div>
+      </div>
+
+      <br>
+      <br>
+
+    </section> -->
+  </div>
+
+  <br>
+
+  <footer class="footer">
+    <img class="logo" src="assets/img/logo-dengue-nao.svg" alt="Logotipo da página com mosquito da dengue" />
+    <p>
+      Projeto Integrador II Univesp
+      <br>
+      ©2022 Grupo 073 - Ituverava-SP.
+    </p>
+  </footer>
+
+  <script src="assets/js/menu.js"></script>
+
+
+</body>
+
+</html>
